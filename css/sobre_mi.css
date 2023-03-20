@@ -1,0 +1,14 @@
+.sobre__mi{
+    /* background-image: url(../Imágenes/Sobre_mí/Mi_lugar.png);
+    background-repeat: no-repeat;
+    min-width: 140px;
+    height: 150px; */
+}
+.sobre__mi p{
+    font-family: var(--Raleway);
+    font-style: normal;
+    font-weight: 700;
+    font-size: 1.25rem;
+    line-height: 1.8rem;
+}
+
