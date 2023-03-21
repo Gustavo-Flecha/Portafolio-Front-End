@@ -1,0 +1,126 @@
+/* You can add global styles to this file, and also import other style files */
+
+/*Reset*/
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+/*Estilos*/
+
+
+h2{
+    font-family: 'Tangerine', serif;
+    font-size: 48px;
+    text-shadow: 4px 4px 4px rgb(10, 6, 6), 4px 4px 4px rgb(22, 6, 255);
+    font-weight: 500;
+    color: rgb(255, 255, 255);
+    padding: 10px;
+    margin:2%;
+  
+  }
+  h2:hover{
+  color:#fff;
+  text-shadow: 0px 0px 15px #fff;
+  }
+  
+  body{
+     /* background: linear-gradient(90deg, #FDBB2D 0%, #3A1C71 100%);  */
+  
+  background-image: linear-gradient(0deg, #023f05 60%, #003e49 80%, #444444 100%);
+  /* background-image: linear-gradient( 0deg, #FFCF71 10%, #2376DD 100%); */
+  
+    padding-bottom: 0.5%;
+  }
+
+
+/*Bases*/
+
+
+:root {
+    --background-llamada-mobile: #00161C;
+    --background-blanco: #FFFFFF;
+    --background-azul-claro: #DFE3F5;
+    --background-ceniza-claro: #F7F4F4;
+    --background-ceniza-medio: #D9D9D9;
+
+    --border-cabecera-mobile: #103D4A;
+
+    --boton-rojo: #B72E2E;
+
+    --fuente-ceniza-claro: #F7F4F4;
+    --fuente-ceniza-oscuro: #4F4C4C;
+
+    --planes-card-start: #035A76;
+    --planes-card-ultra: #690F8E;
+    --planes-card-mega: #B00024;
+
+    --fuente-enlace: #0006FF;
+
+    --background-footer: #333333;
+
+    --Raleway: 'Raleway', sans-serif;
+}
+
+@media screen and (min-width: 768px) {
+    .carrusel__container{
+        margin: 0 calc(((100% - 600px)/2));
+        
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .container {
+        padding-left: calc((100% - 940px)/2);
+        padding-right: calc((100% - 940px)/2);
+    }
+    .menu{
+        display: flex;
+    }
+}
