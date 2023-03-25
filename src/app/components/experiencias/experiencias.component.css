@@ -12,7 +12,7 @@
 	background-color: #666666;
 	box-shadow: 0 5px 5px #313131, 0 9px 0 #393939, 0px 9px 10px rgba(0,0,0,0.4),
 	inset 0px 2px 9px rgba(255,255,255,0.2),
-	inset 0 -2px 9px rgba(0,0,0,0.2);/*Auí se repite varias veces la sombra para que se note, pues con una sola no alcanza*/position: relative;
+	inset 0 -2px 9px rgba(0,0,0,0.2);/*Auquí se repite varias veces la sombra para que se note, pues con una sola no alcanza*/position: relative;
 	border-bottom: 1px solid rgba(255,255,255,0.2);
 	text-align: center;
 	text-shadow: 0px -1px 0px rgba(0,0,0,0.2);
@@ -39,11 +39,19 @@
     -moz-box-shadow: -16px 36px 23px -4px rgba(0,0,0,0.75);
     -o-box-shadow: -16px 36px 23px -4px rgba(0, 0, 0, 0.75);
      box-shadow: -16px 36px 23px -4px rgba(0, 0, 0, 0.75);
-     margin-bottom: 5%; 
+     margin-bottom:5%; 
     font-size: larger;
     font-weight: 600;
 }
 .card-text{
     margin-left: 20px;
     text-decoration: underline;
+}
+.card-descrip{
+    margin-left: 20px;
+}
+#img-java{
+    max-width:768px;
+    height: auto;
+    margin:0 auto;
 }
