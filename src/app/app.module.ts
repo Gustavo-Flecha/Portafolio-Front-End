@@ -11,9 +11,10 @@ import { FooterComponent } from './components/footer/footer.component';
 //Importo CircleProgress
 import { NgCircleProgressModule } from 'ng-circle-progress';
 //Import HTTP
-import {HttpClientModule} from '@angular/common/http';
+import { HttpClientModule } from '@angular/common/http';
 import { HomeComponent } from './components/home/home.component';
 import { LoginComponent } from './components/login/login.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -38,7 +39,8 @@ import { LoginComponent } from './components/login/login.component';
       innerStrokeColor: "#C7E596",
       animationDuration: 300
     }),
-    HttpClientModule   
+    HttpClientModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
