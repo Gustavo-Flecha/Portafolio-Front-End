@@ -1,48 +1,115 @@
+<!-- Sección para editar en fase de desarrollo-->
+ <!--<h2>Experiencia laboral para editar</h2>-->
+<!--<div class="card">
+
+   <button type="button" class="btn-primary"> <a href="" routerLink="/nuevaExpe" *ngIf="isLogged"> </a>
+    Nueva experiencia
+  </button>
+
+  acá la parte que no quiere andar al parecer porque tira error porque no se 
+  está comunicando con el back 
+  <table class="table">
+    <tbody>
+      <tr *ngFor="let ExperienciaModel of expe">
+        <td class="card-descrip">
+          Nombre de la experiencia_1 {{ExperienciaModel.nombreE}}
+        </td>
+        <td class="card-descrip">Descripción de la experiencia_1 {{ExperienciaModel.descripcionE}}</td>
+        <td *ngIf="isLogged">
+          <button class="btn btn-light" routerLink="/editExp/{{ExperienciaModel.id}}">
+            <i class="bi bi-pencil-fill"></i>
+            Editar
+          </button>
+        </td>
+
+        <td *ngIf="isLogged">
+          <button class="btn btn-danger" (click)="delete(ExperienciaModel.id)">
+            <i class="bi bi-trash-fill"></i>
+            Borrar
+          </button>
+      </tr>
+
+      acá comienza la parte para prueba que si anda, solo la parte visual
+      <tr>
+        <td class="card-descrip">Nombre de la experiencia</td>
+        <td class="card-descrip">Descripción de la experiencia</td>
+
+        <td>
+          <button class="btn btn-success">
+            <i class="bi bi-pencil-fill"></i>
+            Editar
+          </button>
+        </td>
+        <td>
+          <button class="btn btn-danger">
+            <i class="bi bi-trash-fill"></i>
+            Borrar
+          </button>
+      </tr>
+    </tbody>
+  </table>
+</div> -->
+
+<!-- fin sección de prueba -->
+
+
+
+
 <section class="container__experiencia" id="Experiencias">
-    <div class="card" id="experiencias">
-      <h2>Experiencias</h2>
+  <div class="card" id="experiencias">
+    <h2>Experiencias</h2>
 
-      <div class="card">
-        <p class="card-text">Prácticas de java</p>
-        <br>
-        <p class="card-descrip"> Prácticas y exámenes realizados en la carrera de Analista de Sistemas en el ISSD </p>
-        <img src="assets/Imagenes/experiencias/Final_Java.png" alt="" class="card-img-top" id="img-java">
-        <div class="card-body">
-          <button class="btn-primary">Repositorio</button>
-        </div>
-      </div>
-
-      <div class="card">
-        <p class="card-text">Prácticas de maquetado</p>
-        <br>
-        <p class="card-descrip"> Sitio web estático realizado en la carrera de Analista de Sistemas en el ISSD </p>
-        <img src="assets/Imagenes/experiencias/modas.jpg" alt="" class="card-img-top">
-        <div class="card-body">
-          <button class="btn-primary"><a href="https://github.com/Gustavo-Flecha/Trabajo_con_colegio">Repositorio</a></button><button class="btn-primary"><a href="https://gustavo-flecha.github.io/Trabajo_con_colegio/">Ver demo</a></button>
-        </div>
-      </div>
-
-      <div class="card">
-         <p class="card-text">Encriptador de texto</p>
-         <br>
-         <p class="card-descrip">Desafío con Alura Latam en la que ingresamos texto legible y realiza el encriptado con javascript</p>  
-        <img src="assets/Imagenes/experiencias/encriptador.png" alt="" class="card-img-top">
-        <div class="card-body">
-         <button class="btn-primary"><a href="https://github.com/Gustavo-Flecha/Proyectos_con_Alura_latam"> Repositorio</a></button><button class="btn-primary"><a href="https://gustavo-flecha.github.io/Proyectos_con_Alura_latam/">Ver demo</a></button>
-        </div>
-      </div>
-
-      <div class="card">
-        <p class="card-text">Juego del ahorcado</p>
-        <br>
-        <p class="card-descrip">Desafío con Alura Latam en la que tienes ciertos intentos para 
-          adivinar la frase o el muñeco hecho con canvas y javascript será ahorcado.
-        </p>
-        <img src="assets/Imagenes/experiencias/ahorcado.png" alt="" class="card-img-top">
-        <div class="card-body">
-          <button class="btn-primary "><a href="https://github.com/Gustavo-Flecha/Proyecto-_con_Alura_Ahorcado">Repositorio</a></button><button class="btn-primary"> <a href="https://gustavo-flecha.github.io/Proyecto-_con_Alura_Ahorcado/">Ver demo</a></button>
-        </div>
+    <div class="card">
+      <p class="card-text">Prácticas de java</p>
+      <br>
+      <p class="card-descrip"> Prácticas y exámenes realizados en la carrera de Analista de Sistemas en el ISSD </p>
+      <img src="assets/Imagenes/experiencias/Final_Java.png" alt="" class="card-img-top" id="img-java">
+      <div class="card-body">
+        <button class="btn-primary">
+          <a href="https://github.com/Gustavo-Flecha/Trabajo_con_colegio/blob/JavaColegio/src/FinalHoyMartes.java">
+          Repositorio</a></button>
       </div>
     </div>
 
-  </section>
+    <div class="card">
+      <p class="card-text">Prácticas de maquetado</p>
+      <br>
+      <p class="card-descrip"> Sitio web estático realizado en la carrera de Analista de Sistemas en el ISSD </p>
+      <img src="assets/Imagenes/experiencias/modas.jpg" alt="" class="card-img-top">
+      <div class="card-body">
+        <button class="btn-primary"><a
+            href="https://github.com/Gustavo-Flecha/Trabajo_con_colegio">Repositorio</a></button><button
+          class="btn-primary"><a href="https://gustavo-flecha.github.io/Trabajo_con_colegio/">Ver demo</a></button>
+      </div>
+    </div>
+
+    <div class="card">
+      <p class="card-text">Encriptador de texto</p>
+      <br>
+      <p class="card-descrip">Desafío con Alura Latam en la que ingresamos texto legible y realiza el encriptado con
+        javascript</p>
+      <img src="assets/Imagenes/experiencias/encriptador.png" alt="" class="card-img-top">
+      <div class="card-body">
+        <button class="btn-primary"><a href="https://github.com/Gustavo-Flecha/Proyectos_con_Alura_latam">
+            Repositorio</a></button><button class="btn-primary"><a
+            href="https://gustavo-flecha.github.io/Proyectos_con_Alura_latam/">Ver demo</a></button>
+      </div>
+    </div>
+
+    <div class="card">
+      <p class="card-text">Juego del ahorcado</p>
+      <br>
+      <p class="card-descrip">Desafío con Alura Latam en la que tienes ciertos intentos para
+        adivinar la frase o el muñeco hecho con canvas y javascript será ahorcado.
+      </p>
+      <img src="assets/Imagenes/experiencias/ahorcado.png" alt="" class="card-img-top">
+      <div class="card-body">
+        <button class="btn-primary "><a
+            href="https://github.com/Gustavo-Flecha/Proyecto-_con_Alura_Ahorcado">Repositorio</a></button><button
+          class="btn-primary"> <a href="https://gustavo-flecha.github.io/Proyecto-_con_Alura_Ahorcado/">Ver
+            demo</a></button>
+      </div>
+    </div>
+  </div>
+
+</section>

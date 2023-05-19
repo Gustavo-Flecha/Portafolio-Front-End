@@ -20,7 +20,7 @@ export class EncabezadoComponent implements OnInit {
   constructor(public personaService: PersonaService, private router: Router, private tokenService: TokenService) { }
 
   ngOnInit(): void {
-    //susbcribe escucha siempre que el observable hace un cambio, entonces provoca una 
+    //susbcribe escucha siempre que el observable hace un cambio, entonces provoca una
     //respuesta o algo. En este caso lo escucha al data y lo pasa al personaService
     //y el personaSerrvice lo pasa al back
     this.personaService.getPersona().subscribe(data => { this.persona = data });
@@ -31,9 +31,12 @@ export class EncabezadoComponent implements OnInit {
       this.isLogged = false;
     }
   }
-  onLogOut():void{
-    this.tokenService.logOut();
-    window.location.reload();
+
+  onLogOut(){
+     sessionStorage.clear();
+     alert("¿Aceptas cerrar sesion?");
+     location.reload();
+    
   }
 
     login(){

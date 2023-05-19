@@ -7,11 +7,13 @@
     </ul>
     <ul class="menu">
       <li><a href="#Portafolio">Portafolio</a></li>
-      <li><a href="#Experiencias">Experiencias</a></li>
       <li><a href="#Skillset">Skillset</a></li>
+      <li><a href="#Experiencias">Experiencias</a></li>
       <li><a href="#Contacto"> Contacto</a></li>
-      <li id="sesion"><a href="/login" (click)="login" *ngIf="!isLogged">Iniciar Sesión</a></li>
-      <li id="sesion"><a href="" (click)="onLogOut" *ngIf="isLogged">Cerrar Sesión</a></li>
+      <!-- <li id="sesion"><a href="" ()="login" *ngIf="!isLogged">Iniciar Sesión</a></li> -->
+      <!-- <li id="sesion"><a href="" (click)="onLogOut" *ngIf="isLogged">Cerrar Sesión</a></li> -->
+      <button class="btn btn-info" id="sesion" *ngIf="!isLogged" (click)="login()">Iniciar Sesión</button>
+      <button class="btn btn-dark" id="sesion" *ngIf="isLogged" (click)="onLogOut()">Cerrar Sesión</button>
     </ul>
   </nav>
   <h3 class="titulo__bajoRelive">Desarrollador Jr</h3> 

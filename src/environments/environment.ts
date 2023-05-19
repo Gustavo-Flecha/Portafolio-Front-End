@@ -6,6 +6,18 @@ export const environment = {
   production: false
 };
 
+/* 
+export const environment = {
+  production: true,
+  apiURL:"https://backendportafoliorender.onrender.com",
+  idPersona:1
+};
+*/
+
+
+
+
+
 /*
  * For easier debugging in development mode, you can import the following file
  * to ignore zone related error stack frames such as `zone.run`, `zoneDelegate.invokeTask`.
